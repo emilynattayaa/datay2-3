@@ -1,0 +1,47 @@
+---
+title: "Final-report"
+author: "Emily Sullivan"
+date: "10/08/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(cache = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+```{r}
+library(tidyverse)
+library(dplyr)
+
+```
+
+Q3. Explore how the household composition varies across ethnic groups in Britain?
+
+In order to address this question, we must look at the Understanding Society data and analyse specific data sets within it. We will be looking at the gender of the individuals residing in the household as part of exploring the individual data responses, as well as the ethnicity of the individuals residing in the household and whether the individuals in the household are of the same or different gender as part of an examination into the household level data responses. 
+``` {r}
+Egoalt8 <- read_tsv("/Users/emilysullivan/Lab sessions/UKDA-6614-tab/tab/ukhls_w8/h_egoalt.tab")
+Hh8 <- read_tsv("/Users/emilysullivan/Lab sessions/UKDA-6614-tab/tab/ukhls_w8/h_hhresp.tab")
+Ind8 <- read_tsv("/Users/emilysullivan/Lab sessions/UKDA-6614-tab/tab/ukhls_w8/h_indresp.tab")
+```
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
