@@ -25,7 +25,7 @@ Egoalt8 <- read_tsv("/Users/emilysullivan/Lab sessions/UKDA-6614-tab/tab/ukhls_w
 Hh8 <- read_tsv("/Users/emilysullivan/Lab sessions/UKDA-6614-tab/tab/ukhls_w8/h_hhresp.tab")
 Ind8 <- read_tsv("/Users/emilysullivan/Lab sessions/UKDA-6614-tab/tab/ukhls_wx/xwavedat.tab")
 ```
-Grouping and isolating parts of the data will make it easier to look at and cross examine the household composition and how it varies across different ethnicity groups in Britain. In egoalt8, we want to keep the relationship of individuals in the household along with their sex whilst sorting into groups those that are in married or cohabiting and those that are single oe not cohabiting. 
+Grouping and isolating parts of the data will make it easier to look at and cross examine the household composition and how it varies across different ethnicity groups in Britain. In egoalt8, we want to keep the relationship of individuals in the household along with their sex whilst sorting into groups those that are in married or cohabiting and those that are single or not cohabiting. 
 
 ```{r}
 
@@ -126,12 +126,10 @@ This second table outlines the specific ethnicity of each heterosexual couple th
 We can identify through this table that with the exception of mixed race women, women of all other ethnicities are more likely to persue and establish marriages or cohabitations with partners of the same ethnicity or race. Mixed race women can be seen to establish marriages or cohabitations with White partners as opposed to other mixed race individuals. It is also worth noting that women identifying as "other" in their ethnic identification were in favour of White partners to cohabit with or to marry. This may be due to lesser socialisation with non-White individuals. Whites were by far the largest to display preference for an ethnically endogamous marriage or cohabitation. The large figure could be down to the survey having taken place in the United Kingdom where Whites make up a large majority of the population. 
 
 
-## Including Plots
+```{r}
 
-Looking at plots of these different data sets 
 
-```{r, echo=FALSE}
 
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Overall, we can see that household composition varies greatly across ethnic groups in Britain with a large number of Whites and non-Whites choosing to marry or live with individuals that are of the same race or ethnicity with the largest display of this being from White people choosing to marry other white people at over 9000 individual women. 
